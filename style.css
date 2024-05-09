@@ -10,3 +10,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* MAIN */
+
+#form-box {
+    background-color: #EFE7DA;
+    width: 45%;
+    padding: 45px 35px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(50, 48, 44, .4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
