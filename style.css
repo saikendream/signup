@@ -14,13 +14,140 @@ body {
 /* MAIN */
 
 #form-box {
-    background-color: #EFE7DA;
     width: 45%;
-    padding: 45px 35px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(50, 48, 44, .4);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #49A0A8;
+    transition: color .4s;
+}
+
+a:hover {
+    transition: color .4s;
+    color: #C44562;
+}
+
+/* HEADER */
+
+.header {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px 35px;
+}
+
+#logo {
+    font-family: 'Tilt Warp', Helvetica, sans-serif;
+    font-size: 5rem;
+    color: white;
+    margin-top: -55px;
+}
+
+#logo span {
+    font-size: 10rem;
+    color: #9A4055;
+}
+
+.header p {
+    font-size: .8rem;
+    margin-top: 25px;
+    color: white;
+}
+
+.header a {
+    color: #9CF0F8;
+}
+
+.header a:hover {
+    color: #C44562;
+}
+
+/* FORM */
+
+.main {
+    padding: 20px 35px;
+    background-color: #EFE7DA;
+}
+
+fieldset {
+    border-width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+label {
+    position: absolute;
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: inherit;
+    padding: 5px;
+    margin: auto 0;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, .2);
+    border-style: solid;
+    height: 3rem;
+    border-radius: 5px;
+    width: 230px;
+    padding: 2px;
+    position: relative;
+    transition: all .4s;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    height: 1.5rem;
+    width: 98%;
+    top: 50%;
+    position: absolute;
+    bottom: 0px;
+    transition: all .4s;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.input:focus-within {
+    transition: all .4s;
+    border-color: #0093cd;
+}
+
+input:focus + label {
+    transition: all .4s;
+    font-size: .8rem;
+    color: #0093cd;
+}
+
+input:valid + label {
+    transition: all .4s;
+    font-size: .8rem;
+}
+
+/* FOOTER */
+
+#copy {
+    text-align: center;
+    position: relative;
+    top: 95vh;
+    color: white;
+}
+
+#copy a {
+    color: #9CF0F8;
+}
+
+#copy a:hover {
+    color: #C44562;
 }
