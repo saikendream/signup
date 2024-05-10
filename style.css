@@ -84,13 +84,14 @@ fieldset {
 
 label {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     width: inherit;
-    padding: 5px;
+    padding: 8px 5px;
     margin: auto 0;
+    cursor: text;
 }
 
 .input {
@@ -102,6 +103,7 @@ label {
     padding: 2px;
     position: relative;
     transition: all .4s;
+    cursor: text;
 }
 
 input {
@@ -125,14 +127,50 @@ input:focus-visible {
 }
 
 input:focus + label {
+    padding: 5px;
     transition: all .4s;
     font-size: .8rem;
     color: #0093cd;
+    cursor: default;
 }
 
 input:valid + label {
+    padding: 3px;
     transition: all .4s;
     font-size: .8rem;
+    cursor: default;
+}
+
+/* BUTTON */
+
+button {
+    padding: 10px 15px;
+    border: 1px solid #ababab;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+button:hover {
+    background-color: #dfdfdf;
+}
+
+button:active {
+    background-color: #c4c4c4;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: #9A4055;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #7f3546;
+}
+
+button[type="submit"]:active {
+    background-color: #672b39;
 }
 
 /* FOOTER */
