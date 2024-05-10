@@ -1,2 +1,2 @@
-let label = document.querySelector("label");
-let input = document.querySelector("input");
+let pass = document.querySelector("#u_pass");
+let passConf = document.querySelector("#u_pass-conf");
