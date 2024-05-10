@@ -173,13 +173,23 @@ button[type="submit"]:active {
     background-color: #672b39;
 }
 
+#done {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px
+}
+
 /* FOOTER */
 
 #copy {
     text-align: center;
-    position: relative;
-    top: 95vh;
+    position: absolute;
+    bottom: 0;
     color: white;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
 }
 
 #copy a {
@@ -188,4 +198,62 @@ button[type="submit"]:active {
 
 #copy a:hover {
     color: #C44562;
+}
+
+/* RESPONSIVITY */
+
+@media (max-width: 350px) {
+    .main {
+        padding: 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    #logo {
+        width: 100%;
+        font-size: 16vw;
+        margin-top: 25px;
+    }
+
+    #logo span {
+        font-size: 35vw;
+    }
+}
+
+@media (max-width: 690px) {
+    #form-box {
+        position: static;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: none;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    #copy {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 870px) {
+    #done {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1350px) {
+    fieldset {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .input {
+        margin: 10px auto;
+    }
 }
