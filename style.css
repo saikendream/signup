@@ -134,11 +134,21 @@ input:focus + label {
     cursor: default;
 }
 
-input:valid + label {
+.filled + label {
     padding: 3px;
     transition: all .4s;
     font-size: .8rem;
     cursor: default;
+}
+
+.invalid {
+    color: #C44562;
+    border-color: #C44562;
+}
+
+input:autofill,
+input:-internal-autofill-selected {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 /* BUTTON */
