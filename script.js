@@ -17,8 +17,15 @@ form.addEventListener("input", function(e) {
     let input = e.target.closest("input");
 
     if(input.value != '') {
-        console.log("Input detedted")
+        console.log("Input detedted");
         input.classList.add("filled");
+        let div = e.target.closest(".input");
+
+        if(!input.checkValidity()) {
+            div.classList.add("invalid");
+        } else {
+            div.classList.remove("invalid");
+        };
     } else {
         input.classList.remove("filled");
     }
