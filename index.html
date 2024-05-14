@@ -44,7 +44,7 @@
 
                 <fieldset>
                     <div class="input">
-                        <input type="password" id="u_pass" name="u_pass" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])" required>
+                        <input type="password" id="u_pass" name="u_pass" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$" required>
                         <label for="u_pass">Password</label>
                     </div>
                     <div class="input">
